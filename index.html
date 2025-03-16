@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>🎂 Happy Birthday, Bou! 🎉</h1>
+            <img src="assets/bou.jpg" alt="My Love" class="wife-image">
+            <p class="message">You make every moment special, and today is all about you! 💖</p>
+            <button class="surprise-btn" onclick="openSurprise()">Click for a Surprise</button>
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="surpriseModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSurprise()">&times;</span>
+            <h2>🎁 A Little Surprise for You! 🎁</h2>
+            <p>👉 Open my laptop bag and find something I brought for you.</p>
+            <p>👉 Check out my wallet to figure out something I wrote for you.</p>
+            <div class="balloons"></div>
+        </div>
+    </div>
+
+    <!-- Confetti -->
+    <canvas id="confettiCanvas"></canvas>
+</body>
+
+</html>
